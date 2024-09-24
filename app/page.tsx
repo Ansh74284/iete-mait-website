@@ -1,6 +1,7 @@
 'use client'
 
-import { Facebook, Instagram, Linkedin, Twitter, ChevronDown } from "lucide-react"
+import { Instagram, Linkedin, ChevronDown } from "lucide-react"
+import Image from 'next/image';
 import { useState } from "react"
 
 export default function EnhancedLandingPage() {
@@ -14,7 +15,7 @@ export default function EnhancedLandingPage() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <img src="/images/main_logo[1].jpg" alt="IETE - MAIT Logo" className="w-28 h-auto rounded-full mr-4" />
+              <Image src="/images/main_logo[1].jpg" alt="IETE - MAIT Logo" className="w-28 h-auto rounded-full mr-4" width={112} height={112} />
               <h1 className="text-3xl font-bold text-sky-400">IETE - MAIT</h1>
             </div>
             <button
@@ -111,11 +112,11 @@ export default function EnhancedLandingPage() {
           <h2 className="text-4xl font-semibold mb-6 text-center text-sky-400">Testimonials</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-sky-900 p-6 rounded-lg shadow-md">
-              <p className="text-gray-300 mb-4">"IETE - MAIT has been instrumental in shaping my technical skills and career path. The exposure to cutting-edge technologies and networking opportunities are unparalleled."</p>
+              <p className="text-gray-300 mb-4">&quot;IETE - MAIT has been instrumental in shaping my technical skills and career path. The exposure to cutting-edge technologies and networking opportunities are unparalleled.&quot;</p>
               <p className="text-sky-400 font-semibold">- Arjun, Speaker</p>
             </div>
             <div className="bg-sky-900 p-6 rounded-lg shadow-md">
-              <p className="text-gray-300 mb-4">"The projects and events organized by IETE - MAIT have given me practical experience that goes beyond classroom learning. It's a must-join for every tech enthusiast!"</p>
+              <p className="text-gray-300 mb-4">&quot;The projects and events organized by IETE - MAIT have given me practical experience that goes beyond classroom learning. It&apos;s a must-join for every tech enthusiast!&quot;</p>
               <p className="text-sky-400 font-semibold">- Aditya Roy, Current Member</p>
             </div>
           </div>
